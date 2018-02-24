@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment.controller.Controller">
+   <children>
+      <Label layoutX="146.0" layoutY="89.0" text="A:" />
+      <TextArea fx:id="aTextArea" layoutX="166.0" layoutY="36.0" prefHeight="123.0" prefWidth="132.0" promptText="Matrix" />
+      <Label layoutX="351.0" layoutY="89.0" text="B:" />
+      <TextArea fx:id="bTextArea" layoutX="370.0" layoutY="36.0" prefHeight="123.0" prefWidth="132.0" promptText="Vector" />
+      <Button fx:id="lupivotBtn" layoutX="215.0" layoutY="175.0" mnemonicParsing="false" onAction="#computeLUWithPivoting" prefHeight="31.0" prefWidth="72.0" text="LU Pivot" />
+      <Button fx:id="inverseBtn" layoutX="298.0" layoutY="175.0" mnemonicParsing="false" onAction="#computeInverse" prefHeight="31.0" prefWidth="66.0" text="Inverse" />
+      <Button fx:id="clearBtn" layoutX="378.0" layoutY="175.0" mnemonicParsing="false" onAction="#clearOutputs" prefHeight="31.0" prefWidth="72.0" text="Clear" />
+      <TextArea fx:id="displayTextArea" editable="false" layoutX="158.0" layoutY="242.0" prefHeight="228.0" prefWidth="361.0" promptText="Results" />
+      <Button fx:id="saveBtn" layoutX="268.0" layoutY="479.0" mnemonicParsing="false" onAction="#saveResults" prefHeight="25.0" prefWidth="60.0" text="Save" />
+      <Button fx:id="loadBtn" layoutX="340.0" layoutY="479.0" mnemonicParsing="false" onAction="#loadResults" prefHeight="25.0" prefWidth="60.0" text="Load" />
+      <Text fx:id="savedOrLoadedText" fill="#222020de" layoutX="416.0" layoutY="496.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="207.0" />
+      <Text fx:id="errorText" fill="#222020de" layoutX="215.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="246.0" />
+   </children>
+</AnchorPane>
