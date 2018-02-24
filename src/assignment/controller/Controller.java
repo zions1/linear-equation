@@ -250,7 +250,8 @@ public class Controller {
         try {
             FileOutputStream fos = new FileOutputStream(fileName);
             DataOutputStream outStream = new DataOutputStream(new BufferedOutputStream(fos));
-            outStream.writeChars(content);
+            byte[] data=content.getBytes("UTF-8");
+            outStream.write(data);
             outStream.close();
         } catch (IOException ex) {
             savedOrLoadedText.setText("Error! Saved failed.");
