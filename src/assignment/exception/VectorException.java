@@ -1,7 +1,7 @@
 package assignment.exception;
 
 /**
- * Signals that a calculation of linear equation has failed.
+ * Signals that a calculation of linear equation has failed on the side of vector.
  *
  * @author Wiktor Florencki
  * @version 1.0

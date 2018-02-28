@@ -50,14 +50,14 @@ public class Controller {
      * @see Text
      */
     @FXML
-    public Text savedOrLoadedText;
+    private Text savedOrLoadedText;
     /**
      * Text field for error message.
      *
      * @see Text
      */
     @FXML
-    public Text errorText;
+    private Text errorText;
 
     /**
      * Default constructor.
